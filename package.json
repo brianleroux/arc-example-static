@@ -10,8 +10,5 @@
   "dependencies": {
     "@architect/macro-http-api": "^1.0.0",
     "rollup": "^2.16.1"
-  },
-  "devDependencies": {
-    "rollup-plugin-fingerprint": "^1.3.0"
   }
 }
