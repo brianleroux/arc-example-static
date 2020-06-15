@@ -1,0 +1,17 @@
+{
+  "scripts": {
+    "clean": "rm -rf dist && mkdir dist",
+    "build:html": "cp src/index.html dist/index.html && cp src/404.html dist/404.html",
+    "build:css": "cp -r src/css dist/css",
+    "build:js": "rollup -c",
+    "watch": "rollup -c --watch",
+    "build": "npm run clean && npm run build:html && npm run build:css && npm run build:js"
+  },
+  "dependencies": {
+    "@architect/macro-http-api": "^1.0.0",
+    "rollup": "^2.16.1"
+  },
+  "devDependencies": {
+    "rollup-plugin-fingerprint": "^1.3.0"
+  }
+}
